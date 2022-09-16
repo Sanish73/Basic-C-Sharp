@@ -10,10 +10,13 @@ namespace Basics
     {
         static void Main(string[] args)
         {
-            string bo = Console.ReadLine();
-          
+            /*
+            /////Arthematic Operation
+            int bo = Convert.ToInt32(Console.ReadLine());
+           bo /= 2;
+            Console.WriteLine(bo);
+            */
 
-            Console.WriteLine("this is"+bo);
        
         }
     }
