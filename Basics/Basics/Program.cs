@@ -36,21 +36,23 @@ namespace Basics
                         Console.WriteLine(name);
             */
 
-          /*  //if else statement
-            int age = Convert.ToInt32(Console.ReadLine());
-            if(age >= 18 && age<=49)
-            {
-                Console.WriteLine("you are 18+");
-            }
-            else if(age>=50)
-            {
-                Console.WriteLine("you are Old");
-            }
-            else
-            {
-                Console.WriteLine("Child");
-            }
-          */
+            /*  //if else statement
+              int age = Convert.ToInt32(Console.ReadLine());
+              if(age >= 18 && age<=49)
+              {
+                  Console.WriteLine("you are 18+");
+              }
+              else if(age>=50)
+              {
+                  Console.WriteLine("you are Old");
+              }
+              else
+              {
+                  Console.WriteLine("Child");
+              }
+            */
+
+            Console.WriteLine();
 
         }
     }
