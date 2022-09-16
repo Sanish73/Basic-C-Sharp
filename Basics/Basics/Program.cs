@@ -30,11 +30,27 @@ namespace Basics
 
               */
 
-/*
-            String name = "Sanish Thapa";
-            name = name.Substring(0, 5);
-            Console.WriteLine(name);
-*/
+            /*
+                        String name = "Sanish Thapa";
+                        name = name.Substring(0, 5);
+                        Console.WriteLine(name);
+            */
+
+          /*  //if else statement
+            int age = Convert.ToInt32(Console.ReadLine());
+            if(age >= 18 && age<=49)
+            {
+                Console.WriteLine("you are 18+");
+            }
+            else if(age>=50)
+            {
+                Console.WriteLine("you are Old");
+            }
+            else
+            {
+                Console.WriteLine("Child");
+            }
+          */
 
         }
     }
