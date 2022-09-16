@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,16 +19,22 @@ namespace Basics
             */
 
 
-          /*  //Math class
-            double a = -3.13;
-            double b = 3.43;
+            /*  //Math class
+              double a = -3.13;
+              double b = 3.43;
 
-            double demo = Math.Ceiling(a);
-             demo = Math.Floor(a);
-            demo = Math.Abs(a);
-            Console.WriteLine(demo);
+              double demo = Math.Ceiling(a);
+               demo = Math.Floor(a);
+              demo = Math.Abs(a);
+              Console.WriteLine(demo);
 
-            */
+              */
+
+/*
+            String name = "Sanish Thapa";
+            name = name.Substring(0, 5);
+            Console.WriteLine(name);
+*/
 
         }
     }
