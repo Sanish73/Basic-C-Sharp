@@ -10,9 +10,13 @@ namespace Basics
     {
         static void Main(string[] args)
         {
+            char sym = '@';
             Console.WriteLine("haaasadai");
-            Console.WriteLine("haaasadai");
+            Console.Beep();
+            Console.WriteLine("\ahaaasadai"+sym);
+            Console.ReadLine();
        
         }
     }
+  
 }
