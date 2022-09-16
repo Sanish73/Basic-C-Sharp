@@ -10,6 +10,7 @@ namespace Basics
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("hi");
         }
     }
 }
