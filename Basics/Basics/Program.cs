@@ -77,12 +77,19 @@ namespace Basics
                 {1,11}
             };
 
-            for(int i=0; i<4; i++)
+          /*  for(int i=0; i<4; i++)
             {
                 for(int j=0; j<2; j++)
                 {
                     Console.WriteLine(values[i,j]);
                 }
+            }
+          */
+          ///now by using foreach loop
+          
+            foreach(var val in values)
+            {
+                Console.WriteLine(val);
             }
 
         }
