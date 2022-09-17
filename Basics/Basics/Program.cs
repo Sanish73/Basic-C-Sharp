@@ -68,31 +68,49 @@ namespace Basics
             //  2.Multi Dimensional Array =1.Rectangle Array
             //                            2.Jagged ArraY
 
-            //Rectangle Array
-            int[,] values = new int[4, 2]
-            {
-                {9,99},
-                {3,33},
-                {4,44},
-                {1,11}
-            };
+            ////////////////////Rectangle Array
+            /*  int[,] values = new int[4, 2]
+           {
+               {9,99},
+               {3,33},
+               {4,44},
+               {1,11}
+           };
 
-          /*  for(int i=0; i<4; i++)
-            {
-                for(int j=0; j<2; j++)
-                {
-                    Console.WriteLine(values[i,j]);
-                }
-            }
-          */
-          ///now by using foreach loop
-          
-            foreach(var val in values)
+        for(int i=0; i<4; i++)
+           {
+               for(int j=0; j<2; j++)
+               {
+                   Console.WriteLine(values[i,j]);
+               }
+           }
+       
+            ///now by using foreach loop
+
+            foreach (var val in values)
             {
                 Console.WriteLine(val);
             }
 
+         */
+            ///////////  2.Jagged Array
+            int[][] jagged = new int[][]
+            {
+                new int[] {1,2},
+                new int[] {1,2,3},
+                new int[] {1,2,4,5}
+            };
+
+            foreach (int[] array in jagged)
+            {
+                Console.WriteLine(array);
+                foreach (int e in array)
+                {
+                   Console.WriteLine(e);
+                }
+            }
+            Console.Read();
+
         }
     }
-  
 }
