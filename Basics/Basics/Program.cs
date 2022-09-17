@@ -10,6 +10,7 @@ namespace Basics
 {
     class Program
     {
+      
         static void Main(string[] args)
         {
             /*
@@ -92,7 +93,7 @@ namespace Basics
                 Console.WriteLine(val);
             }
 
-         */
+         
             ///////////  2.Jagged Array
             int[][] jagged = new int[][]
             {
@@ -109,6 +110,15 @@ namespace Basics
                    Console.WriteLine(e);
                 }
             }
+            */
+
+            //////////Head = When ever an object is created it is allocated on the heap, and a reference to that object is returned.
+         
+            StringBuilder ref1 = new StringBuilder("object1");
+            Console.WriteLine(ref1);
+            StringBuilder ref2 = new StringBuilder("object2");
+            StringBuilder ref3 = ref2;
+            Console.WriteLine(ref3);
             Console.Read();
 
         }
