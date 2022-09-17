@@ -73,7 +73,7 @@ namespace Basics
             {
                 {9,99},
                 {3,33},
-                {4.44},
+                {4,44},
                 {1,11}
             };
 
@@ -81,7 +81,7 @@ namespace Basics
             {
                 for(int j=0; j<2; j++)
                 {
-                    Console.WriteLine(value[i,j]);
+                    Console.WriteLine(values[i,j]);
                 }
             }
 
