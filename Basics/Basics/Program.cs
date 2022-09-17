@@ -11,6 +11,15 @@ namespace Basics
     class Program
     {
       
+        //Foo method is for The ref example
+      /*  static void Foo(ref int p)
+        {
+            p = p + 1;
+            Console.WriteLine(p);
+        }
+      */
+
+
         static void Main(string[] args)
         {
             /*
@@ -110,7 +119,7 @@ namespace Basics
                    Console.WriteLine(e);
                 }
             }
-            */
+           
 
             //////////Head = When ever an object is created it is allocated on the heap, and a reference to that object is returned.
          
@@ -119,6 +128,14 @@ namespace Basics
             StringBuilder ref2 = new StringBuilder("object2");
             StringBuilder ref3 = ref2;
             Console.WriteLine(ref3);
+            
+
+            /////////////////the ref Modifier -- for this i ade method nameed Foo
+
+            int x = 8;
+            Foo(ref x);
+            Console.WriteLine("x is: "+x); //it tooks the ref value of x which is in foo methid
+             */
             Console.Read();
 
         }
