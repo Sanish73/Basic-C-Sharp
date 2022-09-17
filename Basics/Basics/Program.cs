@@ -52,8 +52,16 @@ namespace Basics
               }
             */
 
-            Console.WriteLine();
+            /////Array
+            String[] name = {"sanish" , "thapa" , "third"};
+            name[2] = "sansh3";
 
+            for(int i=0; i<name.Length; i++)
+            {
+                 Console.WriteLine(name[i]);
+            }
+           
+            Console.Read();
         }
     }
   
