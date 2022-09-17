@@ -52,8 +52,9 @@ namespace Basics
               }
             */
 
-            /////Array
-            String[] name = {"sanish" , "thapa" , "third"};
+            /////Array=1.Index array
+            ///         2.multi dientional array
+          /*  String[] name = {"sanish" , "thapa" , "third"};
             name[2] = "sansh3";
 
             for(int i=0; i<name.Length; i++)
@@ -61,7 +62,11 @@ namespace Basics
                  Console.WriteLine(name[i]);
             }
            
-            Console.Read();
+            Console.Read();*/
+
+          //  2.Multi Dimensional Array =1.Rectangle Array
+            //                            2.Jagged ArraY
+
         }
     }
   
