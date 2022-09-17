@@ -10,14 +10,20 @@ namespace Basics
 {
     class Program
     {
-      
+
         //Foo method is for The ref example
-      /*  static void Foo(ref int p)
-        {
-            p = p + 1;
-            Console.WriteLine(p);
-        }
-      */
+        /*  static void Foo(ref int p)
+          {
+              p = p + 1;
+              Console.WriteLine(p);
+          }
+
+
+          static public  void optionalParameter(int x = 3)
+          {
+              Console.WriteLine(x);
+          }
+          */
 
 
         static void Main(string[] args)
@@ -135,8 +141,14 @@ namespace Basics
             int x = 8;
             Foo(ref x);
             Console.WriteLine("x is: "+x); //it tooks the ref value of x which is in foo methid
-             */
+           
+
+            ////////////////Optional Parameter
+            optionalParameter();//if optionalParameter was not static then we cannot call inside the other method
+              */
             Console.Read();
+
+            
 
         }
     }
