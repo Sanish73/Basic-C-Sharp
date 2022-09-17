@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -54,18 +55,35 @@ namespace Basics
 
             /////Array=1.Index array
             ///         2.multi dientional array
-          /*  String[] name = {"sanish" , "thapa" , "third"};
-            name[2] = "sansh3";
+            /*  String[] name = {"sanish" , "thapa" , "third"};
+              name[2] = "sansh3";
 
-            for(int i=0; i<name.Length; i++)
-            {
-                 Console.WriteLine(name[i]);
-            }
-           
-            Console.Read();*/
+              for(int i=0; i<name.Length; i++)
+              {
+                   Console.WriteLine(name[i]);
+              }
 
-          //  2.Multi Dimensional Array =1.Rectangle Array
+              Console.Read();*/
+
+            //  2.Multi Dimensional Array =1.Rectangle Array
             //                            2.Jagged ArraY
+
+            //Rectangle Array
+            int[,] values = new int[4, 2]
+            {
+                {9,99},
+                {3,33},
+                {4.44},
+                {1,11}
+            };
+
+            for(int i=0; i<4; i++)
+            {
+                for(int j=0; j<2; j++)
+                {
+                    Console.WriteLine(value[i,j]);
+                }
+            }
 
         }
     }
