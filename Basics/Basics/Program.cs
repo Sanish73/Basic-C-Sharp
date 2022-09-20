@@ -8,7 +8,14 @@ using System.Threading.Tasks;
 
 namespace Basics
 {
-    
+
+
+
+
+
+
+    /* 
+   // we used arrey to add the elements stored in an array
     class SumOfIntergers
     {
         public static void Main()
@@ -21,11 +28,11 @@ namespace Basics
             Console.WriteLine("Enter The number of elementes to be stored in Array:");
             n = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Input -{0} Elements :",n);   
+            Console.WriteLine("Input- {0} Elements :",n);   
 
             for(i=0; i<n; i++)
             {
-                Console.WriteLine("Enter-{0} Number:", i);
+                Console.Write("Enter- {0} Number:", i);
                 a[i] = Convert.ToInt32(Console.ReadLine());
             }
 
@@ -33,6 +40,9 @@ namespace Basics
             {
                 sum += a[i];
             }
+
+           Console.WriteLine("thotal is : {0}",sum);
+            Console.Read();
 
         }
 
@@ -42,7 +52,7 @@ namespace Basics
 
     
 
-    /* 
+    
      * we used getter and setter simple example
    class myClass
    {
