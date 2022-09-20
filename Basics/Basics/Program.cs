@@ -9,63 +9,65 @@ using System.Threading.Tasks;
 namespace Basics
 {
 
-    class myClass
-    {
-        private int x;
-
-        public void SetX(int i)
-        {
-            x = i + 2;
-        }
-
-        public int GetX()
-        {
-            return x;
-        }
-
-    }
-
-    class mySchool
-    {
-        public static void Main()
-        {
-            myClass mc = new myClass();
-            mc.SetX(3);
-            int final = mc.GetX();
-
-            Console.WriteLine(final);
-
-        }
-    }
-
-
     /* 
-   class Program
+     * we used getter and setter simple example
+   class myClass
    {
+       private int x;
 
-       //Foo method is for The ref example
-       static void Foo(ref int p)
-         {
-             p = p + 1;
-             Console.WriteLine(p);
-         }
-
-
-         static public  void optionalParameter(int x = 3)
-         {
-             Console.WriteLine(x);
-         }
-
-
-
-       static void Main(string[] args)
+       public void SetX(int i)
        {
-           /*
-           /////Arthematic Operation
-           int bo = Convert.ToInt32(Console.ReadLine());
-          bo /= 2;
-           Console.WriteLine(bo);
-           */
+           x = i + 2;
+       }
+
+       public int GetX()
+       {
+           return x;
+       }
+
+   }
+
+   class mySchool
+   {
+       public static void Main()
+       {
+           myClass mc = new myClass();
+           mc.SetX(3);
+           int final = mc.GetX();
+
+           Console.WriteLine(final);
+
+       }
+   }
+
+
+
+  class Program
+  {
+
+      //Foo method is for The ref example
+      static void Foo(ref int p)
+        {
+            p = p + 1;
+            Console.WriteLine(p);
+        }
+
+
+        static public  void optionalParameter(int x = 3)
+        {
+            Console.WriteLine(x);
+        }
+
+
+
+      static void Main(string[] args)
+      {
+          /*
+          /////Arthematic Operation
+          int bo = Convert.ToInt32(Console.ReadLine());
+         bo /= 2;
+          Console.WriteLine(bo);
+          */
 
 
     /*  //Math class
