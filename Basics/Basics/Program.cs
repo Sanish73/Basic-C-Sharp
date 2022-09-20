@@ -10,107 +10,130 @@ namespace Basics
 {
 
 
-
-
-
-
     /* 
-   // we used arrey to add the elements stored in an array
-    class SumOfIntergers
-    {
-        public static void Main()
-        {
-            int n, sum = 0 , i;
-            int[] a = new int[100];
-
-
-            Console.WriteLine("Sum of Elements////");
-            Console.WriteLine("Enter The number of elementes to be stored in Array:");
-            n = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Input- {0} Elements :",n);   
-
-            for(i=0; i<n; i++)
-            {
-                Console.Write("Enter- {0} Number:", i);
-                a[i] = Convert.ToInt32(Console.ReadLine());
-            }
-
-            for(i=0; i<n; i++)
-            {
-                sum += a[i];
-            }
-
-           Console.WriteLine("thotal is : {0}",sum);
-            Console.Read();
-
-        }
-
-
-    }
-
-
-    
-
-    
-     * we used getter and setter simple example
-   class myClass
+   //i am trynig the example of Out
+   class OutModifier
    {
-       private int x;
 
-       public void SetX(int i)
+       static void Pass(int a, int b, out int x, out int y)
        {
-           x = i + 2;
+           x = a;
+           y = b;
+
        }
 
-       public int GetX()
-       {
-           return x;
-       }
-
-   }
-
-   class mySchool
-   {
        public static void Main()
        {
-           myClass mc = new myClass();
-           mc.SetX(3);
-           int final = mc.GetX();
+          int x, y;
+           Pass(1, 2, out x, out y);
 
-           Console.WriteLine(final);
+           Console.WriteLine(x);
+           Console.WriteLine(y);
+           Console.ReadLine();
 
        }
    }
 
 
 
-  class Program
-  {
-
-      //Foo method is for The ref example
-      static void Foo(ref int p)
-        {
-            p = p + 1;
-            Console.WriteLine(p);
-        }
 
 
-        static public  void optionalParameter(int x = 3)
-        {
-            Console.WriteLine(x);
-        }
+      // we used arrey to add the elements stored in an array
+       class SumOfIntergers
+       {
+           public static void Main()
+           {
+               int n, sum = 0 , i;
+               int[] a = new int[100];
+
+
+               Console.WriteLine("Sum of Elements////");
+               Console.WriteLine("Enter The number of elementes to be stored in Array:");
+               n = Convert.ToInt32(Console.ReadLine());
+
+               Console.WriteLine("Input- {0} Elements :",n);   
+
+               for(i=0; i<n; i++)
+               {
+                   Console.Write("Enter- {0} Number:", i);
+                   a[i] = Convert.ToInt32(Console.ReadLine());
+               }
+
+               for(i=0; i<n; i++)
+               {
+                   sum += a[i];
+               }
+
+              Console.WriteLine("thotal is : {0}",sum);
+               Console.Read();
+
+           }
+
+
+       }
 
 
 
-      static void Main(string[] args)
+
+
+        * we used getter and setter simple example
+      class myClass
       {
-          /*
-          /////Arthematic Operation
-          int bo = Convert.ToInt32(Console.ReadLine());
-         bo /= 2;
-          Console.WriteLine(bo);
-          */
+          private int x;
+
+          public void SetX(int i)
+          {
+              x = i + 2;
+          }
+
+          public int GetX()
+          {
+              return x;
+          }
+
+      }
+
+      class mySchool
+      {
+          public static void Main()
+          {
+              myClass mc = new myClass();
+              mc.SetX(3);
+              int final = mc.GetX();
+
+              Console.WriteLine(final);
+
+          }
+      }
+
+
+
+     class Program
+     {
+
+         //Foo method is for The ref example
+         static void Foo(ref int p)
+           {
+               p = p + 1;
+               Console.WriteLine(p);
+           }
+
+
+           static public  void optionalParameter(int x = 3)
+           {
+               Console.WriteLine(x);
+           }
+
+
+
+         static void Main(string[] args)
+         {
+             /*
+             /////Arthematic Operation
+             int bo = Convert.ToInt32(Console.ReadLine());
+            bo /= 2;
+             Console.WriteLine(bo);
+             */
 
 
     /*  //Math class
