@@ -13,14 +13,26 @@ namespace Basics
     {
         public static void Main()
         {
-            int n, sum = 0;
+            int n, sum = 0 , i;
+            int[] a = new int[100];
 
 
             Console.WriteLine("Sum of Elements////");
             Console.WriteLine("Enter The number of elementes to be stored in Array:");
             n = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Input"
+            Console.WriteLine("Input -{0} Elements :",n);   
+
+            for(i=0; i<n; i++)
+            {
+                Console.WriteLine("Enter-{0} Number:", i);
+                a[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for(i=0; i<n; i++)
+            {
+                sum += a[i];
+            }
 
         }
 
