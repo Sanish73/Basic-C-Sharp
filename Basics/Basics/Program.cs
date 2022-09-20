@@ -15,7 +15,7 @@ namespace Basics
 
         public void SetX(int i)
         {
-            x = i + 1;
+            x = i + 2;
         }
 
         public int GetX()
