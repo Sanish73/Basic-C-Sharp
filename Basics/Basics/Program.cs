@@ -8,6 +8,27 @@ using System.Threading.Tasks;
 
 namespace Basics
 {
+    
+    class SumOfIntergers
+    {
+        public static void Main()
+        {
+            int n, sum = 0;
+
+
+            Console.WriteLine("Sum of Elements////");
+            Console.WriteLine("Enter The number of elementes to be stored in Array:");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Input"
+
+        }
+
+
+    }
+
+
+    
 
     /* 
      * we used getter and setter simple example
