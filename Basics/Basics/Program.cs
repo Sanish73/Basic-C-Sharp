@@ -24,7 +24,7 @@ namespace Basics
             {
                 for (int j = 3; j > i; j--)
                 {
-                    Console.Write("0");
+                    Console.Write("9");
                 }
 
                 for(int k = 0; k < fore; k++)
@@ -48,6 +48,9 @@ namespace Basics
                     Console.Write("*");
                 }
                 fore2 = fore2 + 3;
+
+
+
                 Console.WriteLine();
             }
 
