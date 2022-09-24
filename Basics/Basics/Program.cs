@@ -8,11 +8,35 @@ using System.Threading.Tasks;
 
 namespace Basics
 {
-    
 
 
+    //single level inheritance 
+    class A
+    {
+        public int a = 10, b = 5;
+
+    }
+
+    class B : A
+    {
+        public void test()
+        {
+            Console.WriteLine("value of a :"+a +" and value of B is :"+b);  
+        }
+    }
+
+    class Inherit
+    {
+        public static void Main(String[] args)
+        {
+            B obj = new B();
+            obj.test();
+            Console.ReadLine();
+        }
+    }
 
 
+  
 
 
 
