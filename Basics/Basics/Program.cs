@@ -10,197 +10,270 @@ namespace Basics
 {
 
 
-    //single level inheritance 
-    class A
+    /*
+    //diamond pattern
+    class pattern
     {
-        public int a = 10, b = 5;
 
-    }
-
-    class B : A
-    {
-        public void test()
+        public static void Main()
         {
-            Console.WriteLine("value of a :"+a +" and value of B is :"+b);  
+            for(int i = 0; i<4; i++)
+            {
+                for(int j= 0; j<=i; j++)
+                {
+                    Console.Write(" ");
+
+                }
+           
+                for (int k = 4; k > i; k--)
+                {
+                    Console.Write("*");
+                    Console.Write(" ");
+                }
+                Console.WriteLine();
+
+
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 4; j > i; j--)
+                {
+                    Console.Write(" ");
+
+                }
+
+               for (int k = 0; k <= i; k++)
+              {
+                   Console.Write("*");
+                   Console.Write(" ");
+               }
+                Console.WriteLine();
+
+
+            }
         }
     }
 
-    class Inherit
-    {
-        public static void Main(String[] args)
+             
+          class pattern
+          {
+
+              public static void Main()
+              {
+                  for(int i = 0; i<4; i++)
+                  {
+                      for(int j = 0; j <=i; j++)
+                      {
+                          Console.Write("*");
+                      }
+                      Console.WriteLine();
+                  }
+                  for (int i = 0; i < 5; i++)
+                  {
+                      for (int j = 5; j > i; j--)
+                      {
+                          Console.Write("*");
+                      }
+                      Console.WriteLine();
+                  }
+              }
+          }
+
+
+        //single level inheritance 
+        class A
         {
-            B obj = new B();
-            obj.test();
+
+
+          public int a = 10, b = 5;
+
+        }
+
+        class B : A
+        {
+          public void test()
+          {
+              Console.WriteLine("value of a :"+a +" and value of B is :"+b);  
+          }
+        }
+
+        class Inherit
+        {
+          public static void Main(String[] args)
+          {
+              B obj = new B();
+              obj.test();
+              Console.ReadLine();
+          }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        class ParamsMOdifier
+        {
+
+         static int sum(params int[] par)
+         {
+             int sum = 0;
+
+             for(int i= 0; i < par.Length; i++)
+             {
+                 sum += par[i];
+
+             }
+             return sum;
+
+
+         }
+
+        public   static void Main()
+         {
+             int total = sum(3, 23, 4, 5, 5, 2, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4);
+             Console.WriteLine(total);
+         }
+        }
+
+
+
+        //i am trynig the example of Out
+        class OutModifier
+        {
+
+        static void Pass(int a, int b, out int x, out int y)
+        {
+            x = a;
+            y = b;
+
+        }
+
+        public static void Main()
+        {
+           int x, y;
+            Pass(1, 2, out x, out y);
+
+            Console.WriteLine(x);
+            Console.WriteLine(y);
             Console.ReadLine();
+
         }
-    }
-
-
-  
+        }
 
 
 
 
 
+        // we used arrey to add the elements stored in an array
+        class SumOfIntergers
+        {
+            public static void Main()
+            {
+                int n, sum = 0 , i;
+                int[] a = new int[100];
+
+
+                Console.WriteLine("Sum of Elements////");
+                Console.WriteLine("Enter The number of elementes to be stored in Array:");
+                n = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Input- {0} Elements :",n);   
+
+                for(i=0; i<n; i++)
+                {
+                    Console.Write("Enter- {0} Number:", i);
+                    a[i] = Convert.ToInt32(Console.ReadLine());
+                }
+
+                for(i=0; i<n; i++)
+                {
+                    sum += a[i];
+                }
+
+               Console.WriteLine("thotal is : {0}",sum);
+                Console.Read();
+
+            }
+
+
+        }
 
 
 
 
 
+         * we used getter and setter simple example
+        class myClass
+        {
+           private int x;
 
-
-
-
-    /* 
-   class ParamsMOdifier
-   {
-
-       static int sum(params int[] par)
-       {
-           int sum = 0;
-
-           for(int i= 0; i < par.Length; i++)
+           public void SetX(int i)
            {
-               sum += par[i];
+               x = i + 2;
+           }
+
+           public int GetX()
+           {
+               return x;
+           }
+
+        }
+
+        class mySchool
+        {
+           public static void Main()
+           {
+               myClass mc = new myClass();
+               mc.SetX(3);
+               int final = mc.GetX();
+
+               Console.WriteLine(final);
 
            }
-           return sum;
-
-
-       }
-
-     public   static void Main()
-       {
-           int total = sum(3, 23, 4, 5, 5, 2, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4);
-           Console.WriteLine(total);
-       }
-   }
+        }
 
 
 
-  //i am trynig the example of Out
-  class OutModifier
-  {
-
-      static void Pass(int a, int b, out int x, out int y)
-      {
-          x = a;
-          y = b;
-
-      }
-
-      public static void Main()
-      {
-         int x, y;
-          Pass(1, 2, out x, out y);
-
-          Console.WriteLine(x);
-          Console.WriteLine(y);
-          Console.ReadLine();
-
-      }
-  }
-
-
-
-
-
-     // we used arrey to add the elements stored in an array
-      class SumOfIntergers
-      {
-          public static void Main()
-          {
-              int n, sum = 0 , i;
-              int[] a = new int[100];
-
-
-              Console.WriteLine("Sum of Elements////");
-              Console.WriteLine("Enter The number of elementes to be stored in Array:");
-              n = Convert.ToInt32(Console.ReadLine());
-
-              Console.WriteLine("Input- {0} Elements :",n);   
-
-              for(i=0; i<n; i++)
-              {
-                  Console.Write("Enter- {0} Number:", i);
-                  a[i] = Convert.ToInt32(Console.ReadLine());
-              }
-
-              for(i=0; i<n; i++)
-              {
-                  sum += a[i];
-              }
-
-             Console.WriteLine("thotal is : {0}",sum);
-              Console.Read();
-
-          }
-
-
-      }
-
-
-
-
-
-       * we used getter and setter simple example
-     class myClass
-     {
-         private int x;
-
-         public void SetX(int i)
-         {
-             x = i + 2;
-         }
-
-         public int GetX()
-         {
-             return x;
-         }
-
-     }
-
-     class mySchool
-     {
-         public static void Main()
-         {
-             myClass mc = new myClass();
-             mc.SetX(3);
-             int final = mc.GetX();
-
-             Console.WriteLine(final);
-
-         }
-     }
-
-
-
-    class Program
-    {
-
-        //Foo method is for The ref example
-        static void Foo(ref int p)
-          {
-              p = p + 1;
-              Console.WriteLine(p);
-          }
-
-
-          static public  void optionalParameter(int x = 3)
-          {
-              Console.WriteLine(x);
-          }
-
-
-
-        static void Main(string[] args)
+        class Program
         {
-            /*
-            /////Arthematic Operation
-            int bo = Convert.ToInt32(Console.ReadLine());
-           bo /= 2;
-            Console.WriteLine(bo);
-            */
+
+          //Foo method is for The ref example
+          static void Foo(ref int p)
+            {
+                p = p + 1;
+                Console.WriteLine(p);
+            }
+
+
+            static public  void optionalParameter(int x = 3)
+            {
+                Console.WriteLine(x);
+            }
+
+
+
+          static void Main(string[] args)
+          {
+              /*
+              /////Arthematic Operation
+              int bo = Convert.ToInt32(Console.ReadLine());
+             bo /= 2;
+              Console.WriteLine(bo);
+              */
 
 
     /*  //Math class
