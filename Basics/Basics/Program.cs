@@ -9,87 +9,87 @@ using System.Threading.Tasks;
 
 namespace Basics
 {
+    /*
+ //heart pattern
+ class pattern
+ {
 
-    //heart pattern
-    class pattern
-    {
+     public static void Main()
+     {
+         int fore = 4;
+         int fore2 = 4;
+         int ten = 8;
+         int twientyOne = 22;
 
-        public static void Main()
-        {
-            int fore = 4;
-            int fore2 = 4;
-            int ten = 8;
-            int twientyOne = 22;
+         for (int i = 0; i < 3; i++)
+         {
+             for (int j = 3; j > i; j--)
+             {
+                 Console.Write(" ");
+             }
 
-            for (int i = 0; i < 3; i++)
-            {
-                for (int j = 3; j > i; j--)
-                {
-                    Console.Write(" ");
-                }
+             for(int k = 0; k < fore; k++)
+             {
 
-                for(int k = 0; k < fore; k++)
-                {
-                   
-                    Console.Write("*");
-                }
-             
-                fore = fore + 3;
+                 Console.Write("*");
+             }
 
-                for(int l = 1; l<ten; l++)
-                {
-                    Console.Write(" ");
-                }
-              
-                ten = ten - 3;
+             fore = fore + 3;
 
-                for (int k = 0; k < fore2; k++)
-                {
+             for(int l = 1; l<ten; l++)
+             {
+                 Console.Write(" ");
+             }
 
-                    Console.Write("*");
-                }
-                fore2 = fore2 + 3;
+             ten = ten - 3;
 
- 
+             for (int k = 0; k < fore2; k++)
+             {
 
-                Console.WriteLine();
-            }
+                 Console.Write("*");
+             }
+             fore2 = fore2 + 3;
 
-            for(var i= 1; i<12; i++)
-            {
-                for(var j = 0; j<i; j++)
-                {
-                    Console.Write(" ");
-                }
 
-                for(var k = 1; k<twientyOne; k++)
-                {
-                    Console.Write("*");
-                }
-                twientyOne = twientyOne - 2;
 
-                Console.WriteLine();
-            }
+             Console.WriteLine();
+         }
 
-               
-                /*
-            int four = 4;
-            for(int i = 0; i<3; i++)
-            {
-                for(int j= 3; j>i; j--)
-                {
-                    Console.Write("0");
-                }
-            //    Console.WriteLine();
-            for(int k = 1; k<=four; k++)
-                {
-                    four = four + 2;
-                   
-                    Console.Write("*");
-                }
-                Console.WriteLine();
-            }*/
-        }
+         for(var i= 1; i<12; i++)
+         {
+             for(var j = 0; j<i; j++)
+             {
+                 Console.Write(" ");
+             }
+
+             for(var k = 1; k<twientyOne; k++)
+             {
+                 Console.Write("*");
+             }
+             twientyOne = twientyOne - 2;
+
+             Console.WriteLine();
+         }
+
+
+
+         int four = 4;
+         for(int i = 0; i<3; i++)
+         {
+             for(int j= 3; j>i; j--)
+             {
+                 Console.Write("0");
+             }
+         //    Console.WriteLine();
+         for(int k = 1; k<=four; k++)
+             {
+                 four = four + 2;
+
+                 Console.Write("*");
+             }
+             Console.WriteLine();
+         }*/
+}
     }
 
 
