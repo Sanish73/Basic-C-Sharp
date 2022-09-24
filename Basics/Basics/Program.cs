@@ -19,12 +19,13 @@ namespace Basics
             int fore = 4;
             int fore2 = 4;
             int ten = 8;
+            int twientyOne = 22;
 
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 3; j > i; j--)
                 {
-                    Console.Write("9");
+                    Console.Write(" ");
                 }
 
                 for(int k = 0; k < fore; k++)
@@ -37,7 +38,7 @@ namespace Basics
 
                 for(int l = 1; l<ten; l++)
                 {
-                    Console.Write("7");
+                    Console.Write(" ");
                 }
               
                 ten = ten - 3;
@@ -49,7 +50,23 @@ namespace Basics
                 }
                 fore2 = fore2 + 3;
 
+ 
 
+                Console.WriteLine();
+            }
+
+            for(var i= 1; i<12; i++)
+            {
+                for(var j = 0; j<i; j++)
+                {
+                    Console.Write(" ");
+                }
+
+                for(var k = 1; k<twientyOne; k++)
+                {
+                    Console.Write("*");
+                }
+                twientyOne = twientyOne - 2;
 
                 Console.WriteLine();
             }
