@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Basics
 {
-    /*
+    
  //heart pattern
  class pattern
  {
@@ -72,24 +72,24 @@ namespace Basics
          }
 
 
+            /*
+            int four = 4;
+            for(int i = 0; i<3; i++)
+            {
+                for(int j= 3; j>i; j--)
+                {
+                    Console.Write("0");
+                }
+            //    Console.WriteLine();
+            for(int k = 1; k<=four; k++)
+                {
+                    four = four + 2;
 
-         int four = 4;
-         for(int i = 0; i<3; i++)
-         {
-             for(int j= 3; j>i; j--)
-             {
-                 Console.Write("0");
-             }
-         //    Console.WriteLine();
-         for(int k = 1; k<=four; k++)
-             {
-                 four = four + 2;
-
-                 Console.Write("*");
-             }
-             Console.WriteLine();
-         }*/
-}
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }*/
+        }
     }
 
 
