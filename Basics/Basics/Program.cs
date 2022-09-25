@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 namespace Basics
 {
 
+    //Argumnet List
+    /*
     //Automatic propertie Get/set
 
     class demo
@@ -37,7 +39,7 @@ namespace Basics
             Console.WriteLine("sum of " + demo.a + " and " + demo.b + " = " + demo.sum);
         }
     }
-    /*
+    
      * 
    class pattern
    {
