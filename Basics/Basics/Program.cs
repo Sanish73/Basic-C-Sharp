@@ -36,7 +36,7 @@ namespace Basics
             IndexerClass ic = new IndexerClass();
             ic[0] = "sanish";
             ic[1] = "karan";
-            ic[2] = "sh";
+            ic[2] = "some";
             ic[3] = "s";
             ic[4] = "h";
             ic[5] = "n";
