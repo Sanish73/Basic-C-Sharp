@@ -30,6 +30,24 @@ namespace Basics
                 }
             }
         }
+
+        static void Main()
+        {
+            IndexerClass ic = new IndexerClass();
+            ic[0] = "sanish";
+            ic[1] = "nish";
+            ic[2] = "sh";
+            ic[3] = "s";
+            ic[4] = "h";
+            ic[5] = "n";
+            ic[6] = "ssdf";
+
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(ic[i]);
+            }
+
+        }
     }
     /*
     //Automatic propertie Get/set
