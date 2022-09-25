@@ -20,7 +20,14 @@ namespace Basics
             
             public string this[int i]
             {
-
+                get
+                {
+                    return names[i];
+                }
+                set
+                {
+                    names[i] = value;
+                }
             }
         }
     }
