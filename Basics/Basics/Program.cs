@@ -35,7 +35,7 @@ namespace Basics
         {
             IndexerClass ic = new IndexerClass();
             ic[0] = "sanish";
-            ic[1] = "nish";
+            ic[1] = "karan";
             ic[2] = "sh";
             ic[3] = "s";
             ic[4] = "h";
