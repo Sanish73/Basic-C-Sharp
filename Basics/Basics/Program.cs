@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Basics
 {
 
-
+    Automatic propertie Get/set
     /*
      * 
    class pattern
