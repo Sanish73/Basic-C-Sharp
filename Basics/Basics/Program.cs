@@ -12,6 +12,20 @@ namespace Basics
 
 
     //Static member of a class
+
+    static class person
+    {
+        public static int id;
+        public static string name;
+        public static int age;
+
+        public static void Display()
+        {
+
+        }
+         
+
+    }
     /*
     //Argumnet List
 
