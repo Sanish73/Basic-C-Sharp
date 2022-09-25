@@ -20,16 +20,24 @@ namespace Basics
         {
             Console.WriteLine("I am not static  constructor");
         }
+
         static pattern()
         {
             Console.WriteLine("I am  static  constructor");
         }
+      
+      
     }
 
     class program
     {
 
-
+        public static void Main()
+        {
+            new pattern();
+            //new pattern();
+        }
+    }
 
 
         /*
