@@ -21,10 +21,20 @@ namespace Basics
 
         public static void Display()
         {
-
+            Console.WriteLine("ID is: " + id + " and you name is:" + name + " and age is :" + age);
         }
-         
+    }
 
+    class program
+    {
+        static void Main()
+        {
+            person.id = 1;
+            person.name = "sanish";
+            person.age = 21;
+
+            person.Display();
+        }
     }
     /*
     //Argumnet List
