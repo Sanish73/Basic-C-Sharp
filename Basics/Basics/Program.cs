@@ -10,7 +10,27 @@ using System.Threading.Tasks;
 namespace Basics
 {
 
-    Automatic propertie Get/set
+    //Automatic propertie Get/set
+
+    class demo
+    {
+        public int a {get; set; }
+
+        public int b { get; set; }
+
+        public int sum
+        {
+            get
+            {
+                return a + b;
+            }
+        }
+    }
+
+    class test
+    {
+
+    }
     /*
      * 
    class pattern
