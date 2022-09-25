@@ -11,6 +11,19 @@ namespace Basics
 {
 
     //Argumnet List
+
+    class program
+    {
+        class IndexerClass
+        {
+            private string[] names = new string[10];
+            
+            public string this[int i]
+            {
+
+            }
+        }
+    }
     /*
     //Automatic propertie Get/set
 
