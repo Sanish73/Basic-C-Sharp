@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 namespace Basics
 {
 
+
+    //Static member of a class
+    /*
     //Argumnet List
 
     class program
@@ -49,7 +52,7 @@ namespace Basics
 
         }
     }
-    /*
+    
     //Automatic propertie Get/set
 
     class demo
