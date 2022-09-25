@@ -29,7 +29,13 @@ namespace Basics
 
     class test
     {
-
+        public static void Main()
+        {
+            demo demo = new demo();
+            demo.a = 1;
+            demo.b = 2;
+            Console.WriteLine("sum of " + demo.a + " and " + demo.b + " = " + demo.sum);
+        }
     }
     /*
      * 
