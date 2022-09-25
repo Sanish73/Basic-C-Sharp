@@ -12,6 +12,7 @@ namespace Basics
 
 
     /*
+     * 
    class pattern
    {
        //Static Constructor
