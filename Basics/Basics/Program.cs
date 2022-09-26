@@ -14,16 +14,19 @@ namespace Basics
     {
         enum value_no
         {
-            one = 1,
+            one = 5,
             two = 2,
             three = 3,
             four = 4,
-            five = 5
+            five = 50
         }
        
         public static void Main()
         {
             Console.WriteLine((int)value_no.one);
+
+            var value = (value_no)50;
+
         }
     }
   
