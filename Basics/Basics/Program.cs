@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Basics
 {
 
-
+    /*
     //Static member of a class
 
     static class person
@@ -36,7 +36,7 @@ namespace Basics
             person.Display();
         }
     }
-    /*
+    
     //Argumnet List
 
     class program
