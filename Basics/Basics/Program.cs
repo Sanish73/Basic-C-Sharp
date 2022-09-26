@@ -23,10 +23,10 @@ namespace Basics
        
         public static void Main()
         {
-            Console.WriteLine((int)value_no.one);
+           // Console.WriteLine((int)value_no.one);
 
             var value = (value_no)50;
-
+            Console.WriteLine(value);
         }
     }
   
