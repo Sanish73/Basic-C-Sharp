@@ -10,6 +10,18 @@ using System.Threading.Tasks;
 namespace Basics
 {
     //enum 
+    class eenum
+    {
+        enum value_no
+        {
+            one = 1,
+            two = 2,
+            three = 3,
+            four = 4,
+            five = 5
+        }
+    }
+  
 
 
     /*
