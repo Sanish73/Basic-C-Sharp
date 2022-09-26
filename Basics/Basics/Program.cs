@@ -20,6 +20,11 @@ namespace Basics
             four = 4,
             five = 5
         }
+       
+        public static void Main()
+        {
+            Console.WriteLine((int)value_no.one);
+        }
     }
   
 
