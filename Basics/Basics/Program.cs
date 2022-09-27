@@ -22,6 +22,10 @@ namespace Basics
             num = "sanish";
             Console.WriteLine("Value: {0}, Type: {1}", num, num.GetType());
 
+
+            num = false;
+            Console.WriteLine("Value: {0}, Type: {1}", num, num.GetType());
+
         }
     }
             /*
