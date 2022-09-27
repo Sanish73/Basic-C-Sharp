@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 
 namespace Basics
 {
+    //string builder
+    /*
     //enum 
     class eenum
     {
@@ -32,7 +34,7 @@ namespace Basics
   
 
 
-    /*
+    
     //Static member of a class
 
     static class person
