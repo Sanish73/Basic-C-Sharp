@@ -18,6 +18,10 @@ namespace Basics
             dynamic num = 100;
             Console.WriteLine("Value: {0}, Type: {1}", num, num.GetType());
 
+
+            num = "sanish";
+            Console.WriteLine("Value: {0}, Type: {1}", num, num.GetType());
+
         }
     }
             /*
