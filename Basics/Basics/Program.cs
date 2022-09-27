@@ -11,6 +11,43 @@ namespace Basics
 {
 
     //interface
+    interface IFile
+    {
+        void WritingFile(String text);
+        void ReadFile();
+    }
+
+    class FileInfo : IFile 
+    {
+         void IFile.ReadFile()
+        {
+            Console.WriteLine("Reading File");
+        }
+
+        void IFile.WritingFile(String text)
+        {
+            Console.WriteLine("Reading File");
+        }
+
+        public void searching()
+        {
+            Console.WriteLine("Searching File");
+        }
+    }
+
+    class Program
+    {
+        public static void Main()
+        {
+            FileInfo file = new FileInfo();
+            IFile file2 = new FileInfo();
+
+            file2.WritingFile("content");
+            file.searching();
+            
+        }
+    }
+
 
     /*
    //Nullable value
