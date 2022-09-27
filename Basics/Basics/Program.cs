@@ -18,7 +18,9 @@ namespace Basics
             StringBuilder sb = new StringBuilder();
             sb.Append("hi");
             sb.AppendLine("sanish");
-            sb.Append("Nice To Meet You!!!");
+            sb.AppendLine("Nice To Meet You!!!");
+
+            Console.Write(sb);
 
 
         }
