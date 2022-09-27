@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 namespace Basics
 {
 
+    // Anonymous Type
     class Builder
     {
         public static void Main()
