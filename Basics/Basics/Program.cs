@@ -11,249 +11,276 @@ namespace Basics
 {
 
     // Anonymous Type
-    class Builder
+
+   public  class Student
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Class { get; set; }
+    }
+
+    class Program
     {
         public static void Main()
         {
-            //string builder
-            StringBuilder sb = new StringBuilder();
-            sb.Append("hi");
-            sb.AppendLine("sanish");
-            sb.AppendLine("Nice To Meet You!!!");
+            IList<Student> studentList = new List<Student>()
+            {
+                  new Student() { Id = 1 ,  Name = "sanish" , Class = 10 },
+            new Student() { Id = 2, Name = "Samundra", Class = 11 },
+            new Student() { Id = 3, Name = "sonima", Class = 12 },
+            new Student() { Id = 4, Name = "nirik", Class = 13 }
+            };
 
-            Console.Write(sb);
+            var students = from s in studentList
+                           select new(id = s.Id, name = s.Name, clas = Class);
 
-
+          
         }
-       
-
     }
-   
-
     /*
-    //enum 
-    class eenum
-    {
-        enum value_no
-        {
-            one = 5,
-            two = 2,
-            three = 3,
-            four = 4,
-            five = 50
-        }
-       
-        public static void Main()
-        {
-           // Console.WriteLine((int)value_no.one);
-
-            var value = (value_no)50;
-            Console.WriteLine(value);
-        }
-    }
-  
-
-
-    
-    //Static member of a class
-
-    static class person
-    {
-        public static int id;
-        public static string name;
-        public static int age;
-
-        public static void Display()
-        {
-            Console.WriteLine("ID is: " + id + " and you name is:" + name + " and age is :" + age);
-        }
-    }
-
-    class program
-    {
-        static void Main()
-        {
-            person.id = 1;
-            person.name = "sanish";
-            person.age = 21;
-
-            person.Display();
-        }
-    }
-    
-    //Argumnet List
-
-    class program
-    {
-        class IndexerClass
-        {
-            private string[] names = new string[10];
-            
-            public string this[int i]
-            {
-                get
-                {
-                    return names[i];
-                }
-                set
-                {
-                    names[i] = value;
-                }
-            }
-        }
-
-        static void Main()
-        {
-            IndexerClass ic = new IndexerClass();
-            ic[0] = "sanish";
-            ic[1] = "karan";
-            ic[2] = "some";
-            ic[3] = "s";
-            ic[4] = "h";
-            ic[5] = "n";
-            ic[6] = "ssdf";
-
-            for(int i = 0; i < 10; i++)
-            {
-                Console.WriteLine(ic[i]);
-            }
-
-        }
-    }
-    
-    //Automatic propertie Get/set
-
-    class demo
-    {
-        public int a {get; set; }
-
-        public int b { get; set; }
-
-        public int sum
-        {
-            get
-            {
-                return a + b;
-            }
-        }
-    }
-
-    class test
-    {
-        public static void Main()
-        {
-            demo demo = new demo();
-            demo.a = 1;
-            demo.b = 2;
-            Console.WriteLine("sum of " + demo.a + " and " + demo.b + " = " + demo.sum);
-        }
-    }
-    
-     * 
-   class pattern
-   {
-       //Static Constructor
-
-       public pattern()
-       {
-           Console.WriteLine("I am not static  constructor");
-       }
-
-       static pattern()
-       {
-           Console.WriteLine("I am  static  constructor");
-       }
-   }
-
-   class program
-   {
-
-       public static void Main()
-       {
-           new pattern();
-           //new pattern();
-       }
-   }
-
-
-      //heart pattern
- public static void Main()
+ class Builder
  {
-     int fore = 4;
-     int fore2 = 4;
-     int ten = 8;
-     int twientyOne = 22;
-
-     for (int i = 0; i < 3; i++)
+     public static void Main()
      {
-         for (int j = 3; j > i; j--)
-         {
-             Console.Write(" ");
-         }
+         //string builder
+         StringBuilder sb = new StringBuilder();
+         sb.Append("hi");
+         sb.AppendLine("sanish");
+         sb.AppendLine("Nice To Meet You!!!");
 
-         for(int k = 0; k < fore; k++)
-         {
-
-             Console.Write("*");
-         }
-
-         fore = fore + 3;
-
-         for(int l = 1; l<ten; l++)
-         {
-             Console.Write(" ");
-         }
-
-         ten = ten - 3;
-
-         for (int k = 0; k < fore2; k++)
-         {
-
-             Console.Write("*");
-         }
-         fore2 = fore2 + 3;
+         Console.Write(sb);
 
 
-
-         Console.WriteLine();
-     }
-
-     for(var i= 1; i<12; i++)
-     {
-         for(var j = 0; j<i; j++)
-         {
-             Console.Write(" ");
-         }
-
-         for(var k = 1; k<twientyOne; k++)
-         {
-             Console.Write("*");
-         }
-         twientyOne = twientyOne - 2;
-
-         Console.WriteLine();
      }
 
 
+ }
 
-        int four = 4;
-        for(int i = 0; i<3; i++)
-        {
-            for(int j= 3; j>i; j--)
-            {
-                Console.Write("0");
-            }
-        //    Console.WriteLine();
-        for(int k = 1; k<=four; k++)
-            {
-                four = four + 2;
 
-                Console.Write("*");
-            }
-            Console.WriteLine();
-        }
-   }
-   }*/
+
+ //enum 
+ class eenum
+ {
+     enum value_no
+     {
+         one = 5,
+         two = 2,
+         three = 3,
+         four = 4,
+         five = 50
+     }
+
+     public static void Main()
+     {
+        // Console.WriteLine((int)value_no.one);
+
+         var value = (value_no)50;
+         Console.WriteLine(value);
+     }
+ }
+
+
+
+
+ //Static member of a class
+
+ static class person
+ {
+     public static int id;
+     public static string name;
+     public static int age;
+
+     public static void Display()
+     {
+         Console.WriteLine("ID is: " + id + " and you name is:" + name + " and age is :" + age);
+     }
+ }
+
+ class program
+ {
+     static void Main()
+     {
+         person.id = 1;
+         person.name = "sanish";
+         person.age = 21;
+
+         person.Display();
+     }
+ }
+
+ //Argumnet List
+
+ class program
+ {
+     class IndexerClass
+     {
+         private string[] names = new string[10];
+
+         public string this[int i]
+         {
+             get
+             {
+                 return names[i];
+             }
+             set
+             {
+                 names[i] = value;
+             }
+         }
+     }
+
+     static void Main()
+     {
+         IndexerClass ic = new IndexerClass();
+         ic[0] = "sanish";
+         ic[1] = "karan";
+         ic[2] = "some";
+         ic[3] = "s";
+         ic[4] = "h";
+         ic[5] = "n";
+         ic[6] = "ssdf";
+
+         for(int i = 0; i < 10; i++)
+         {
+             Console.WriteLine(ic[i]);
+         }
+
+     }
+ }
+
+ //Automatic propertie Get/set
+
+ class demo
+ {
+     public int a {get; set; }
+
+     public int b { get; set; }
+
+     public int sum
+     {
+         get
+         {
+             return a + b;
+         }
+     }
+ }
+
+ class test
+ {
+     public static void Main()
+     {
+         demo demo = new demo();
+         demo.a = 1;
+         demo.b = 2;
+         Console.WriteLine("sum of " + demo.a + " and " + demo.b + " = " + demo.sum);
+     }
+ }
+
+  * 
+class pattern
+{
+    //Static Constructor
+
+    public pattern()
+    {
+        Console.WriteLine("I am not static  constructor");
+    }
+
+    static pattern()
+    {
+        Console.WriteLine("I am  static  constructor");
+    }
+}
+
+class program
+{
+
+    public static void Main()
+    {
+        new pattern();
+        //new pattern();
+    }
+}
+
+
+   //heart pattern
+public static void Main()
+{
+  int fore = 4;
+  int fore2 = 4;
+  int ten = 8;
+  int twientyOne = 22;
+
+  for (int i = 0; i < 3; i++)
+  {
+      for (int j = 3; j > i; j--)
+      {
+          Console.Write(" ");
+      }
+
+      for(int k = 0; k < fore; k++)
+      {
+
+          Console.Write("*");
+      }
+
+      fore = fore + 3;
+
+      for(int l = 1; l<ten; l++)
+      {
+          Console.Write(" ");
+      }
+
+      ten = ten - 3;
+
+      for (int k = 0; k < fore2; k++)
+      {
+
+          Console.Write("*");
+      }
+      fore2 = fore2 + 3;
+
+
+
+      Console.WriteLine();
+  }
+
+  for(var i= 1; i<12; i++)
+  {
+      for(var j = 0; j<i; j++)
+      {
+          Console.Write(" ");
+      }
+
+      for(var k = 1; k<twientyOne; k++)
+      {
+          Console.Write("*");
+      }
+      twientyOne = twientyOne - 2;
+
+      Console.WriteLine();
+  }
+
+
+
+     int four = 4;
+     for(int i = 0; i<3; i++)
+     {
+         for(int j= 3; j>i; j--)
+         {
+             Console.Write("0");
+         }
+     //    Console.WriteLine();
+     for(int k = 1; k<=four; k++)
+         {
+             four = four + 2;
+
+             Console.Write("*");
+         }
+         Console.WriteLine();
+     }
+}
+}*/
 
 
     /*
