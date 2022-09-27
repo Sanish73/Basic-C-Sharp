@@ -9,7 +9,24 @@ using System.Threading.Tasks;
 
 namespace Basics
 {
-    //string builder
+
+    class Builder
+    {
+        public static void Main()
+        {
+            //string builder
+            StringBuilder sb = new StringBuilder();
+            sb.Append("hi");
+            sb.AppendLine("sanish");
+            sb.Append("Nice To Meet You!!!");
+
+
+        }
+       
+
+    }
+   
+
     /*
     //enum 
     class eenum
