@@ -16,12 +16,12 @@ namespace Basics
     {
         static StopWatch()
         {
-
+            Console.WriteLine("this is static ");
         }
 
         public StopWatch()
         {
-
+            Console.WriteLine("this is static "); Console.WriteLine("this is static ");
         }
 
     }
