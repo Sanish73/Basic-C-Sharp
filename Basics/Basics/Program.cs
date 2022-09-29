@@ -10,7 +10,21 @@ using System.Threading.Tasks;
 namespace Basics
 {
 
-    static constructor vs instance construction
+   // static constructor vs instance construction
+
+    public class StopWatch
+    {
+        static StopWatch()
+        {
+
+        }
+
+        public StopWatch()
+        {
+
+        }
+
+    }
 
     /*
   //static
