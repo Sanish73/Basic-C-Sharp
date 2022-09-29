@@ -21,7 +21,7 @@ namespace Basics
 
         public StopWatch()//this is instancec constructor
         {
-            Console.WriteLine("this is static "); 
+            Console.WriteLine("this is Instance "); 
         }
         // static method
         public static void DisplayInfo()
@@ -36,7 +36,12 @@ namespace Basics
     {
         public static void Main()
         {
-            var stopwatch = StopWatch;
+      //  StopWatch.DisplayInfo();
+
+            StopWatch stop = new StopWatch();
+            //StopWatch stop2 = new StopWatch();
+
+            StopWatch.DisplayInfo(); 
         }
     }
 
