@@ -14,16 +14,30 @@ namespace Basics
 
     public class StopWatch
     {
-        static StopWatch()
+        static StopWatch()//this is static constructor
         {
             Console.WriteLine("this is static ");
         }
 
-        public StopWatch()
+        public StopWatch()//this is instancec constructor
         {
-            Console.WriteLine("this is static "); Console.WriteLine("this is static ");
+            Console.WriteLine("this is static "); 
+        }
+        // static method
+        public static void DisplayInfo()
+        {
+            Console.WriteLine("DisplayInfo called");
         }
 
+    }
+
+
+    public class Problem
+    {
+        public static void Main()
+        {
+            var stopwatch = StopWatch;
+        }
     }
 
     /*
