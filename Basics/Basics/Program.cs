@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 namespace Basics
 {
 
+
    // static constructor vs instance construction
 
     public class StopWatch
@@ -23,6 +24,7 @@ namespace Basics
         {
             Console.WriteLine("this is Instance "); 
         }
+
         // static method
         public static void DisplayInfo()
         {
