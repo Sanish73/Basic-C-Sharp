@@ -41,7 +41,7 @@ namespace Basics
       //  StopWatch.DisplayInfo();
 
             StopWatch stop = new StopWatch();
-            //StopWatch stop2 = new StopWatch();
+            StopWatch stop2 = new StopWatch();
 
             StopWatch.DisplayInfo(); 
         }
